@@ -104,6 +104,78 @@ elif(app_mode=="Disease Recognition"):
                     "dosage": "",  # No specific dosage provided
                     "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\apple rust.png"
                 },
+                3: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                4: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                7: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                10: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                14: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                17: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                19: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                22: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                23: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                24: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                27: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
+                37: {
+                    "cause": "NONE",
+                    "medicine_name": "NONE",
+                    "dosage": "NONE",
+                    "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\healthy.png"
+                     },
                 5: {
                     "cause": "Podosphaera mors-uvae",
                     "medicine_name": "Myclobutanil",
@@ -248,6 +320,7 @@ elif(app_mode=="Disease Recognition"):
                     "dosage": "Spray weekly as per label instructions",
                     "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\Tomato_mosaic_virus.png"
                 }
+                
         }
 
         disease_data = disease_info[result_index]
