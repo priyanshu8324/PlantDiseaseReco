@@ -18,29 +18,30 @@ app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Recogniti
 
 #Main Page
 if(app_mode=="Home"):
-    st.header("PLANT DISEASE RECOGNITION SYSTEM")
+    st.header("Baele Sanjeeivini")
     image_path = r"C:\Users\Priyanka Bharti\Downloads\home_page.jpeg"
     st.image(image_path,use_column_width=True)
     st.markdown("""
-    Welcome to the Plant Disease Recognition System! 🌿🔍
-    
-    Our mission is to help in identifying plant diseases efficiently. Upload an image of a plant, and our system will analyze it to detect any signs of diseases. Together, let's protect our crops and ensure a healthier harvest!
+**Revolutionizing Plant Care**
 
-    ### How It Works
-    1. **Upload Image:** Go to the **Disease Recognition** page and upload an image of a plant with suspected diseases.
-    2. **Analysis:** Our system will process the image using advanced algorithms to identify potential diseases.
-    3. **Results:** View the results and recommendations for further action.
+Welcome to the Plant Disease Detective 🕵️‍♀️🌱
 
-    ### Why Choose Us?
-    - **Accuracy:** Our system utilizes state-of-the-art machine learning techniques for accurate disease detection.
-    - **User-Friendly:** Simple and intuitive interface for seamless user experience.
-    - **Fast and Efficient:** Receive results in seconds, allowing for quick decision-making.
+Your Plant's Personal Doctor
 
-    ### Get Started
-    Click on the **Disease Recognition** page in the sidebar to upload an image and experience the power of our Plant Disease Recognition System!
+Ever wondered why your plant isn't looking its best? 🌱 Our AI-powered tool can help! Simply upload a photo of your ailing plant, and we'll analyze it to identify potential diseases and offer expert advice.
 
-    ### About Us
-    Learn more about the project, our team, and our goals on the **About** page.
+How it Works:
+
+Snap a Pic: Take a photo of your plant's affected area.
+Upload and Analyze: Upload the image to our system. Our AI will analyze it for signs of disease.
+Get Expert Advice: Receive tailored recommendations to help your plant recover.
+Why Choose Us?
+
+Accurate Diagnosis: Our AI is trained on a vast dataset of plant images, ensuring accurate results.
+User-Friendly: No technical expertise required. Simply upload a photo and get instant results.
+Quick and Easy: Get quick diagnoses and expert advice to help your plants thrive.
+Let's Get Started!
+Click on the Disease Recognition page to upload your plant's photo and let's get your plant back to health! 🌿
     """)
 
 #About Project
@@ -62,7 +63,7 @@ elif(app_mode=="About"):
 elif(app_mode=="Disease Recognition"):
     st.header("Disease Recognition")
     test_image = st.file_uploader("Choose an Image:")
-    if(st.button("Show Image")):
+    if(st.button("User Image")):
         st.image(test_image,width=4,use_column_width=True)
     #Predict button
     if(st.button("Predict")):
@@ -101,7 +102,7 @@ elif(app_mode=="Disease Recognition"):
                 2: {
                     "cause": "Fungus: Gymnosporangium juniperi-virginianae",
                     "medicine_name": "Trifloxystrobin",
-                    "dosage": "",  # No specific dosage provided
+                    "dosage": "\nApply 3.0 to 7.0 fl oz/acre at the first sign of disease and repeat every 14 days if necessary.",  
                     "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\apple rust.png"
                 },
                 3: {
@@ -179,13 +180,13 @@ elif(app_mode=="Disease Recognition"):
                 5: {
                     "cause": "Podosphaera mors-uvae",
                     "medicine_name": "Myclobutanil",
-                    "dosage": "",  # No specific dosage provided
+                    "dosage": "Apply 2.0 to 4.0 fl oz/acre depending on the growth stage and infection level.",  # No specific dosage provided
                     "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\cherry powdery.png"
                 },
                 7: {
                     "cause": "Cercospora zeae-maydis and Cercospora sorghi",
                     "medicine_name": "Pyraclostrobin",
-                    "dosage": "",  # No specific dosage provided
+                    "dosage": "Apply 6.0 to 15.5 fl oz/acre depending on the severity of the infection.",  # No specific dosage provided
                     "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\corn.png"
                 },
                 8: {
@@ -288,7 +289,7 @@ elif(app_mode=="Disease Recognition"):
 
                     32: {
                 "cause": "Fungus: Septoria lycopersici",
-                "medicine_name": "",  # No specific medicine name mentioned
+                "medicine_name": "Copper fungicide spray",
                 "dosage": "Apply once every 7-10 days",
                 "image": r"C:\Users\Priyanka Bharti\Desktop\img diis\tomato spectorial spot.png"
                     },
@@ -328,3 +329,18 @@ elif(app_mode=="Disease Recognition"):
         st.write("Medicine Name:", disease_data["medicine_name"])
         st.write("Dosage:", disease_data["dosage"])
         st.image(disease_data["image"], width=200)
+
+
+    if st.button("Availability"):
+        stores = [
+        {"name": "SRI MANJUNATHA FERTILIZERS, TUMKUR", "address": "2nd Main Rd , Tumakuru", "phone": "1234567890"},
+        {"name": "K.R.Vijayakumar Fertiliser & Seeds Dealer", "address": "Gandhi Nagar, Tumakuru", "phone": "9876543210"},
+        {"name": "Integrated Pest Control Pvt. Ltd.", "address": "Bengaluru, Karnataka", "phone": "7411032320"}
+    ]
+        if stores:
+         st.table(stores)
+        else:
+            st.write("No stores found in your location.")
+        
+
+       
